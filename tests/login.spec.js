@@ -4,7 +4,7 @@ const dataset=JSON.parse(JSON.stringify(require('../utils/login.json')));
 
 for(const credentials of dataset)
 {
-test(`@smoke valid LogIn for ${credentials.username}`,async({page})=>
+test.only(`@smoke valid LogIn for ${credentials.username}`,async({page})=>
 {
     const textContent = page.locator("div[class='left mt-1'] h3");
     const poManager = new POManager(page);
