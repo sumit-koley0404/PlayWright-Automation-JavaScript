@@ -23,5 +23,4 @@ custometest.only(`@fixture Registration With Fixture Data`, async({page,testData
   await registrationPage.registration(testDataForReqistration.firstname,testDataForReqistration.lastname,testDataForReqistration.email,
     testDataForReqistration.mobileno,testDataForReqistration.userpassword,testDataForReqistration.confirmpassword);
   await expect(successValidation).toHaveText("Account Created Successfully");
-
 })
